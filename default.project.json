@@ -88,23 +88,35 @@
 			"StarterPlayerScripts":{
 				"$className":"StarterPlayerScripts",
 	
-				"DragonEngine":{"$path":"./src/Packages/DragonEngine/Client"}
+				"DragonEngine":{"$path":"./src/Packages/DragonEngine/Client"},
+
+				"Utils":{"$path":"./src/Client/Utils"},
+				"Classes":{"$path":"./src/Client/Classes"},
+				"Controllers":{"$path":"./src/Client/Controllers"}
 			}
 		},
 	
 		"ServerScriptService":{
 			"$className":"ServerScriptService",
-	
+			"$path":"./src/Server",
+
 			"DragonEngine":{"$path":"./src/Packages/DragonEngine/Server"}
 		},
 	
 		"ReplicatedStorage":{
 			"$className":"ReplicatedStorage",
-	
+			"$path":"./src/Shared",
+
 			"DragonEngine":{
 				"$path":"./src/Packages/DragonEngine/Shared",
 				"lib":{"$path":"./src/Packages/DragonEngine/Submodules/lib"}
 			}
+		},
+
+		"ReplicatedFirst":{
+			"$className":"ReplicatedFirst",
+
+			"ClientInit":{"$path":"./src/Client/Init"}
 		}
 	}
 }
