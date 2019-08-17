@@ -29,26 +29,11 @@
 		"Lighting":{
 			"$className":"Lighting",
 			"$properties":{
-				"Ambient":{
-					"Type":"Color3",
-					"Value":[0,0,0]
-				},
-				"OutdoorAmbient":{
-					"Type":"Color3",
-					"Value":[0.5,0.5,0.5]
-				},
-				"ColorShift_Top":{
-					"Type":"Color3",
-					"Value":[0,0,0]
-				},
-				"ColorShift_Bottom":{
-					"Type":"Color3",
-					"Value":[0,0,0]
-				},
-				"FogColor":{
-					"Type":"Color3",
-					"Value":[0.75,0.75,0.75]
-				},			
+				"Ambient":[0,0,0],
+				"OutdoorAmbient":[0.5,0.5,0.5],
+				"ColorShift_Top":[0,0,0],
+				"ColorShift_Bottom":[0,0,0],
+				"FogColor":[0.75,0.75,0.75],	
 				"FogEnd":100000,
 				"FogStart":0,
 
@@ -59,21 +44,14 @@
 
 				"GlobalShadows":true,
 				"LegacyOutlines":false,
-				"Technology":{
-					"Type":"Enum",
-					"Value":3
-				}
-				
+				"Technology":"ShadowMap"		
 			}
 		},
 
 		"SoundService":{
 			"$className":"SoundService",
 			"$properties":{
-				"AmbientReverb":{
-					"Type":"Enum",
-					"Value":0
-				},
+				"AmbientReverb":"NoReverb",
 				"DistanceFactor":3.33,
 				"DopplerScale":1,
 				"RolloffScale":1
@@ -88,22 +66,10 @@
 				
 				"CameraMaxZoomDistance":128,
 				"CameraMinZoomDistance":0.5,
-				"CameraMode":{
-					"Type":"Enum",
-					"Value":0
-				},
-				"DevCameraOcclusionMode":{
-					"Type":"Enum",
-					"Value":0
-				},
-				"DevComputerCameraMovementMode":{
-					"Type":"Enum",
-					"Value":0
-				},
-				"DevTouchCameraMovementMode":{
-					"Type":"Enum",
-					"Value":0
-				},
+				"CameraMode":"Classic",
+				"DevCameraOcclusionMode":"Zoom",
+				"DevComputerCameraMovementMode":"UserChoice",
+				"DevTouchCameraMovementMode":"UserChoice",
 	
 				"AutoJumpEnabled":true,
 				"CharacterJumpPower":50,
@@ -113,14 +79,9 @@
 				"LoadCharacterAppearance":true,
 				"UserEmotesEnabled":true,
 	
-				"DevComputerMovementMode":{
-					"Type":"Enum",
-					"Value":0
-				},
-				"DevTouchMovementMode":{
-					"Type":"Enum",
-					"Value":0
-				},
+				"DevComputerMovementMode":"UserChoice",
+				"DevTouchMovementMode":"UserChoice",
+
 				"EnableMouseLockOption":true
 			},
 	
