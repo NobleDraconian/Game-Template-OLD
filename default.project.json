@@ -117,6 +117,13 @@
 			"$className":"ReplicatedFirst",
 
 			"ClientInit":{"$path":"./src/Client/Init"}
+		},
+		
+		"HttpService":{
+			"$className":"HttpService",
+			"$properties":{
+				"HttpEnabled":true
+			}
 		}
 	}
 }
