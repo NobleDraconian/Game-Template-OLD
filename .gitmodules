@@ -1,0 +1,3 @@
+[submodule "src/Packages/DragonEngine"]
+	path = src/Packages/DragonEngine
+	url = git@github.com:Reshiram110/Dragon-Engine

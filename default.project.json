@@ -1,0 +1,149 @@
+{
+	"name":"New Project",
+	"tree":{
+		"$className":"DataModel",
+
+		"Workspace":{
+			"$className":"Workspace",
+			"$properties":{
+				"AllowThirdPartySales":false,
+				"FallenPartsDestroyHeight":-500,
+				"Gravity":196.2,
+				"StreamingEnabled":false,
+				"StreamingMinRadius":64,
+				"StreamingTargetRadius":1024
+			},
+
+			"Terrain":{"$path":"./Assets/Global_Terrain.rbxmx"},
+			"Map":{"$path":"./Assets/Map.rbxmx"}
+		},
+
+		"Players":{
+			"$className":"Players",
+			"$properties":{
+				"RespawnTime":6,
+				"CharacterAutoLoads":true
+			}
+		},
+
+		"Lighting":{
+			"$className":"Lighting",
+			"$properties":{
+				"Ambient":{
+					"Type":"Color3",
+					"Value":[0,0,0]
+				},
+				"OutdoorAmbient":{
+					"Type":"Color3",
+					"Value":[0.5,0.5,0.5]
+				},
+				"ColorShift_Top":{
+					"Type":"Color3",
+					"Value":[0,0,0]
+				},
+				"ColorShift_Bottom":{
+					"Type":"Color3",
+					"Value":[0,0,0]
+				},
+				"FogColor":{
+					"Type":"Color3",
+					"Value":[0.75,0.75,0.75]
+				},			
+				"FogEnd":100000,
+				"FogStart":0,
+
+				"GeographicLatitude":41.733,
+				"ClockTime":14,
+				"Brightness":2,
+				"ExposureCompensation":0,
+
+				"GlobalShadows":true,
+				"LegacyOutlines":false,
+				"Technology":{
+					"Type":"Enum",
+					"Value":3
+				}
+				
+			}
+		},
+
+		"SoundService":{
+			"$className":"SoundService",
+			"$properties":{
+				"AmbientReverb":{
+					"Type":"Enum",
+					"Value":0
+				},
+				"DistanceFactor":3.33,
+				"DopplerScale":1,
+				"RolloffScale":1
+			}
+		},
+
+		"StarterPlayer":{
+			"$className":"StarterPlayer",
+			"$properties":{
+				"HealthDisplayDistance":100,
+				"NameDisplayDistance":100,
+				
+				"CameraMaxZoomDistance":128,
+				"CameraMinZoomDistance":0.5,
+				"CameraMode":{
+					"Type":"Enum",
+					"Value":0
+				},
+				"DevCameraOcclusionMode":{
+					"Type":"Enum",
+					"Value":0
+				},
+				"DevComputerCameraMovementMode":{
+					"Type":"Enum",
+					"Value":0
+				},
+				"DevTouchCameraMovementMode":{
+					"Type":"Enum",
+					"Value":0
+				},
+	
+				"AutoJumpEnabled":true,
+				"CharacterJumpPower":50,
+				"CharacterUseJumpPower":true,
+				"CharacterMaxSlopeAngle":89,
+				"CharacterWalkSpeed":16,
+				"LoadCharacterAppearance":true,
+				"UserEmotesEnabled":true,
+	
+				"DevComputerMovementMode":{
+					"Type":"Enum",
+					"Value":0
+				},
+				"DevTouchMovementMode":{
+					"Type":"Enum",
+					"Value":0
+				},
+				"EnableMouseLockOption":true
+			},
+	
+			"StarterPlayerScripts":{
+				"$className":"StarterPlayerScripts",
+	
+				"DragonEngine":{"$path":"./src/Packages/DragonEngine/Client"}
+			}
+		},
+	
+		"ServerScriptService":{
+			"$className":"ServerScriptService",
+	
+			"DragonEngine":{"$path":"./src/Packages/DragonEngine/Server"}
+		},
+	
+		"ReplicatedStorage":{
+			"$className":"ReplicatedStorage",
+	
+			"DragonEngine":{
+				"$path":"./src/Packages/DragonEngine/Shared",
+				"lib":{"$path":"./src/Packages/DragonEngine/Submodules/lib"}
+			}
+		}
+	}
+}
