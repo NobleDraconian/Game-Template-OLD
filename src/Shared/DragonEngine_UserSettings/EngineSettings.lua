@@ -17,5 +17,6 @@
 
 return{
 	["ShowLogoInOutput"]=false,
-	["Debug"]=false
+	["Debug"]=false,
+	["IgnoredModules"]={"ExampleService","ExampleController"}
 }
