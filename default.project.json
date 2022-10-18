@@ -143,7 +143,9 @@
 			"DragonEngine" : {"$path" : "Packages/DragonEngine/Framework_Core.rbxmx"},
 			"DragonEngine_Configs" : {"$path" : "src/Shared/DragonEngine_Configs"},
 			"Assets" : {
-				"$className" :"Folder"
+				"$className" :"Folder",
+
+				"UIs" : {"$path" : "Assets/UIs"}
 			},
 			"Modules" : {
 				"$path" : "src/Shared/Modules"
