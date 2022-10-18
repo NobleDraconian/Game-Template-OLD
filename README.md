@@ -1,4 +1,4 @@
-[![Lua linting](https://github.com/NobleDraconian/Project-Walljump/actions/workflows/lua-lint.yml/badge.svg)](https://github.com/NobleDraconian/Project-Walljump/actions/workflows/lua-lint.yml)
+[![Lua linting](https://github.com/NobleDraconian/Game-Template/actions/workflows/lua-lint.yml/badge.svg)](https://github.com/NobleDraconian/Game-Template/actions/workflows/lua-lint.yml)
 
 # USING THIS TEMPLATE
 1) Create a new **blank** repository
