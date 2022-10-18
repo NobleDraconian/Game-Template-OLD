@@ -1,1 +1,6 @@
-*.rbxlx
+*.lock
+site/
+Temp/*
+!Temp/.gitkeep
+Env/*
+!Env/.gitkeep

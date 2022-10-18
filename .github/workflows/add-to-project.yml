@@ -1,0 +1,19 @@
+name: Add PRs and issues to the github-project for this repository
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@69f6549fe2de69701520baa81fbbbc31bed93918
+        with:
+          project-url: https://github.com/users/user/projects/number
+          github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}

@@ -1,0 +1,49 @@
+state:
+  remote:
+    region: us-east-1
+    bucket: phoenixentertainment-mantle-states
+    key: project-name
+    
+owner:
+  group: 4446965
+environments:
+  - label: Test
+    targetAccess: private
+    targetNamePrefix: environmentLabel
+
+  - label: DEV_ND
+    targetAccess: private
+    targetNamePrefix: environmentLabel
+
+  - label: DEV_Spathi
+    targetAccess: private
+    targetNamePrefix: environmentLabel
+
+  - label: Production
+    targetAccess: public
+
+target:
+  experience:
+    socialLinks:
+      - title: Follow us for NEWS AND UPDATES!
+        url: https://twitter.com/Phoenix_Devs
+      - title: Join our COMMUNITY for NEWS, SNEAKPEEKS and UPDATES!
+        url: https://discord.gg/QUDbRGadAF
+      - title : Join our group!
+        url: https://www.roblox.com/groups/4446965
+      
+    configuration:
+      playableDevices: [computer,phone,tablet,console]
+      privateServers: disabled
+      enableStudioAccessToApis: true
+      avatarType: r15
+      avatarCollisionType: innerBox
+
+    places:
+      start:
+        file: Temp/CurrentBuild.rbxl
+        configuration:
+          name: Unnamed Project
+          description: |
+           Soon(TM)!
+          maxPlayerCount: 50
