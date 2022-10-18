@@ -1,11 +1,14 @@
 [![Lua linting](https://github.com/NobleDraconian/Project-Walljump/actions/workflows/lua-lint.yml/badge.svg)](https://github.com/NobleDraconian/Project-Walljump/actions/workflows/lua-lint.yml)
 
 # USING THIS TEMPLATE
-1) Create a new github repository using github's templates feature, from this repository
-2) Set `project-url` in `.github/workflows/add-to-project.yml` to the URL of the repository's associated project
-3) Configure your S3 bucket configs in `mantle.yml`. This is where the mantle state file will be hosted.
-4) Configure your S3 bucket access keys in `Scripts/install-tooling.bat`.
-5) Remove the "USING THIS TEMPLATE" instructions from this README.
+1) Create a new **blank** repository
+2) Locally clone this template repository
+3) Set the local clone's remote to point to the newly created blank repository
+4) Push to remote. The template's files should now have populated your new repository!
+5) Set `project-url` in `.github/workflows/add-to-project.yml` to the URL of the repository's associated project
+6) Configure your S3 bucket configs in `mantle.yml`. This is where the mantle state file will be hosted.
+7) Configure your S3 bucket access keys in `Scripts/install-tooling.bat`.
+8) Remove the "USING THIS TEMPLATE" instructions from this README.
 
 # Project-CODENAME
 Soon(TM)
